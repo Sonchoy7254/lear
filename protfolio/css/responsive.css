@@ -1,0 +1,80 @@
+/* ### navbar menu button ###  */
+
+@media screen and (max-width: 800px) {
+    .nav-link {
+        display: none;
+        height: 90vh;
+        width: 30%;
+        background-color: #323232;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 52px;
+    }
+    .nav-button {
+        display: block;
+    }
+    .nav-link ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-link ul li {
+        padding: 14px 18px;
+        text-align: center;
+        width: 100%;
+    }
+    .nav-link.active {
+        display: block;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-text{
+        margin: 50px auto;
+    }
+    .header-img {
+        height: 50%;
+        width: 50%; 
+    }
+    .header-h1-text {
+        margin: 50px auto;
+    } 
+    .social-menu #fi_1077042{
+
+        position: relative;
+        animation-name: animation-menus-f;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+      }
+      @keyframes animation-menus-f {
+        0% { left: -500px; top: -1000px}
+        25%{ left: -500px; top: 5px;}
+        50%{ left: -500px; top: 3px;}
+        75%{left: -500px; top: 5px;}
+        100%{left: 0; top: 5px;}
+      }
+      .social-menu #fi_4406234{
+        position: relative;
+        animation-name: animation-menus-i;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+      }
+      @keyframes animation-menus-i {
+       0% { left: -500px; top: -1000px}
+       25%{ left: -500px; top: 5px;}
+       50%{ left: -500px; top: 3px;}
+       75%{left: -500px; top: 5px;}
+       100%{left: 0; top: 5px;}
+      }
+      .order-button {
+        margin: auto 090px;
+      }
+}
